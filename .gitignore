@@ -64,5 +64,5 @@ bower_components/
 tmp
 
 # Gulp Generated #
-dev/css/*.css
-dev/js/*.js
+*.css
+js/*.js
