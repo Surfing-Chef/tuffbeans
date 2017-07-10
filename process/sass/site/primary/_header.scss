@@ -3,8 +3,8 @@
   .parallax-background {
     background-color: blue;
     background: url(img/HeaderImg.jpg) 50% 0 no-repeat fixed;
-    min-height: 750px;
-    height: 750px;
+    min-height: $parallax-window-height;
+    height: $parallax-window-height;
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
@@ -12,7 +12,7 @@
   }
 
   .parallax-background article {
-    height: 458px;
+    height: 200px;
     position: absolute;
     text-align: center;
     top: 10%;
