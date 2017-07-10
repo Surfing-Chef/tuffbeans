@@ -1,0 +1,26 @@
+.home
+{
+  .parallax-background {
+    background-color: blue;
+    background: url(img/HeaderImg.jpg) 50% 0 no-repeat fixed;
+    min-height: 750px;
+    height: 750px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+  }
+
+  .parallax-background article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 100%;
+
+    .logo {
+      margin: 0 auto;
+      filter: drop-shadow(0 0 5px black);
+    }
+  }
+}
