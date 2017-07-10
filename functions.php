@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package _s
+ * @package tuffbeans
  */
 
 if ( ! function_exists( 'tuffbeans_setup' ) ) :

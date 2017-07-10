@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package _s
+ * @package tuffbeans
  */
 
 if ( ! function_exists( 'tuffbeans_posted_on' ) ) :
