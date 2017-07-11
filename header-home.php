@@ -36,7 +36,7 @@
 
 		<section id="home" data-type="background" data-speed="5" class="parallax-background">
 			<article>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/TuffBeans_logoWhite.png" alt="Tuff Beans Logo" class="logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/TuffBeans_logoWhite.svg" alt="Tuff Beans Logo" class="logo">
 			</article>
 		</section>
 
