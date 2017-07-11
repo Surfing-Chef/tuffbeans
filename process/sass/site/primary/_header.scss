@@ -10,6 +10,7 @@
     max-width: 1920px;
     position: relative;
     border-bottom: 1px solid $color-border-thin;
+    z-index: -99;
   }
 
   .parallax-background article {
