@@ -1,7 +1,7 @@
 .home
 {
   .parallax-background {
-    background-color: blue;
+    box-shadow: inset 0 0 100px #000000;
     background: url(img/HeaderImg.jpg) 50% 0 no-repeat fixed;
     min-height: $parallax-window-height;
     height: $parallax-window-height;
@@ -9,6 +9,7 @@
     width: 100%;
     max-width: 1920px;
     position: relative;
+    border-bottom: 1px solid $color-border-thin;
   }
 
   .parallax-background article {
