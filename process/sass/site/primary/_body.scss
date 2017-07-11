@@ -1,0 +1,26 @@
+// primary/body
+body {
+
+}
+
+.page {
+
+}
+
+header {
+
+  &.parallax-window {
+    @import "./modules/parallax-header";
+  }
+
+}
+
+#content {
+  max-width: $max-main-container-width;
+  margin: 0 auto;
+}
+
+footer{
+  max-width: $max-main-container-width;
+  margin: 0 auto;
+}
