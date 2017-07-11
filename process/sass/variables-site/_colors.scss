@@ -19,4 +19,5 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-$color-border-thin: transparentize(black, 0.6);
+$color-border-thin-dark: transparentize(black, 0.6);
+$color-border-thin-light: transparentize(white, 0.6);
