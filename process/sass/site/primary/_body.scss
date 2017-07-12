@@ -8,11 +8,20 @@ body {
 }
 
 header {
+  &.site-header {
+    height: 100px;
+  }
 
   &.parallax-window {
     @import "./modules/parallax-header";
   }
 
+  // &.site-header {
+  //   position: fixed;
+  //   height: 100px;
+  //   top: 0;
+  //   z-index: 99999;
+  // }
 }
 
 #content {
