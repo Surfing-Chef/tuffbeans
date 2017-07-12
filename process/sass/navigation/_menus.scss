@@ -1,10 +1,13 @@
 // navigation/menu
-
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+
+}
+
+.main-navigation.home {
 
 	ul {
 		list-style: none;

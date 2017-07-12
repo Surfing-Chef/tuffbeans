@@ -40,7 +40,7 @@
 			</article>
 		</section>
 
-		<nav class="main-navigation">
+		<nav class="main-navigation home">
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
