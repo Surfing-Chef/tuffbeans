@@ -6,6 +6,7 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 ## TASKLIST ##
 - [x] responsive header heights
 - [ ] font and color scheme
+- [ ] primary navigation - non-landing page
 - [ ] primary navigation - visual style
 - [ ] menu page
 - [ ] location page
