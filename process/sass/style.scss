@@ -47,10 +47,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
+/*--------------------------------------------------------------
+  # Normalize, Variables and Mixins
 --------------------------------------------------------------*/
+@import "normalize";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
-@import "bourbon/dir-bourbon";
 
 /*--------------------------------------------------------------
 # Typography
