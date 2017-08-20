@@ -16,6 +16,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
+<link rel="icon" href="http://localhost/tuffPress/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost/tuffPress/favicon.png" type="image/x-icon" />
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <?php wp_head(); ?>
 </head>
 
@@ -26,7 +31,7 @@
 	<header id="masthead" class="site-header">
 
 		<nav id="site-navigation" class="main-navigation">
-	
+
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
