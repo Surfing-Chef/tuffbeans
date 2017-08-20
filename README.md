@@ -13,9 +13,13 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 - [ ] contacts page
 
 ## CHANGELOG ##
-[![GitHub version](https://badge.fury.io/gh/surfing-chef%2Fsc-bourbon-boilerplate.svg)](https://badge.fury.io/gh/surfing-chef%2Fsc-bourbon-boilerplate) sc-bourbon-boilerplate
-
+**2.0.1**  
 - Added parallax header to homepage
   - [A Simple Parallax Scrolling Technique](https://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641)
 - Added favicon (hard coded not dashboard)
   - [How to Add a Favicon to Your WordPress Blog](http://www.wpbeginner.com/wp-tutorials/how-to-add-a-favicon-to-your-wordpress-blog/)
+- Added data and structure including Plugins on WordPress install:
+  - ACF
+  - Formidable Forms
+  - Jetpack
+  - Food and Drink Menu
