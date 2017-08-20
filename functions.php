@@ -130,6 +130,21 @@ function tuffbeans_scripts() {
 add_action( 'wp_enqueue_scripts', 'tuffbeans_scripts' );
 
 /**
+ * Register your Google API key
+ */
+function tuff_acf_google_map_api( $api ){
+
+	$api['key'] = 'AIzaSyAJ56xphK-kmVt6WvzSm8IPpJL0sAb8XEI';
+
+	return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'tuff_acf_google_map_api');
+
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
