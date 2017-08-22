@@ -42,14 +42,15 @@
 			</article>
 		</section>
 
-		<nav class="main-navigation home">
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+  <nav class="main-navigation home">
+    <?php
+      wp_nav_menu( array(
+        'theme_location' => 'menu-1',
+        'menu_id'        => 'primary-menu',
+      ) );
+    ?>
+  </nav><!-- #site-navigation -->
 
 	<div id="content" class="site-content">
