@@ -20,6 +20,15 @@
 <link rel="shortcut icon" href="http://localhost/tuffPress/favicon.png" type="image/x-icon" />
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Oswald:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto+Slab:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700|Fjalla+One" rel="stylesheet"
 
 <?php wp_head(); ?>
 </head>
