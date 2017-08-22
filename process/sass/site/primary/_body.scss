@@ -1,8 +1,10 @@
 // primary/body
 body {
+  overflow-x: hidden;
 }
 
-footer{
-  max-width: $max-main-container-width;
-  margin: 0 auto;
+#page {
+  background: white;
+  margin-top: 455px;
+  margin-bottom: 100px;
 }
