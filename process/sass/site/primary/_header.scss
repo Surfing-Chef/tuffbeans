@@ -1,0 +1,14 @@
+header {
+  &.site-header {
+    height: 100px;
+  }
+
+  &.parallax-window {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -998;
+    bottom: 0;
+    @import "./modules/parallax-header";
+  }
+}

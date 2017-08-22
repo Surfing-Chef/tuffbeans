@@ -1,0 +1,84 @@
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  @media screen
+  and (min-width: 769px) {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  @media screen
+  and (min-width: $max-main-container-width) {
+    width: $max-main-container-width;
+    margin: 0 auto;
+  }
+
+  #primary {
+    flex: 1 1 0;
+    padding: 1em;
+  }
+
+  #secondary {
+    flex: 1 1 0;
+    padding: 1em;
+
+  }
+
+}
+
+// Info
+#tuff-info {
+  .news-bullet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.icon-background1 {
+  color: red;
+}
+.icon-background2 {
+  color: orange;
+}
+.icon-background3 {
+  color: green;
+}
+
+// Tuff Menus
+#tuff-menus{
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .fdm-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fdm-item-panel {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      padding-right: 0;
+    }
+  }
+  .fdm-item {
+    margin-bottom: 0;
+  }
+  .fdm-item-title {
+    padding-right: 0;
+  }
+  .fdm-item-price-wrapper {
+    display: none;
+  }
+}
