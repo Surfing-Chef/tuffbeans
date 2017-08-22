@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="menus">
+<section  id="tuff-menus" class="menus">
 	<header class="section-header">
 		<h1 class="section-title">Menus</h1>
 	</header><!-- .page-header -->

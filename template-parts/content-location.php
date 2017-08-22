@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="location">
+<section  id="tuff-location" class="location">
 	<header class="section-header">
 		<h1 class="section-title">Location</h1>
 	</header><!-- .page-header -->

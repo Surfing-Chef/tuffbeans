@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="info">
+<section  id="tuff-info" class="info">
 	<div class="section-content">
 		<?php
 		if ( is_front_page() ) : ?>
