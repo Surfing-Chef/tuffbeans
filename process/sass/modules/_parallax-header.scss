@@ -14,11 +14,15 @@
   }
 
   .parallax-background article {
-    height: 200px;
     position: absolute;
     text-align: center;
     top: 10%;
     width: 100%;
+
+    @media screen
+		and (max-height: 568px) {
+      top: 5%;
+    }
 
     .logo {
       display: flex;
@@ -26,5 +30,10 @@
       width: 100%;
       height: 200px;
       filter: drop-shadow(1px 1px $color-border-thin-dark);
+
+      @media screen
+  		and (min-width: 568px) {
+        height:250px;
+      }
     }
   }
