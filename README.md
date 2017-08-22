@@ -26,6 +26,8 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 
 **2.1**
 - Added layout styles
+- Customized responsive menu with Font Awesome, SCSS and jQuery
 
-- TODO
-  - edit nav menu layout (responsive as well)
+**TODO**
+- font and font-styles
+- color style guide for site
