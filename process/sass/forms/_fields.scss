@@ -1,3 +1,10 @@
+fieldset {
+	border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 3px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -30,4 +37,9 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+.frm_description {
+	font-size: .8rem;
+	padding-left: 9em;
 }
