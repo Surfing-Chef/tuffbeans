@@ -30,4 +30,6 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 
 **TODO**
 - font and font-styles
+- convert form to flex-box
+  - remember `process/sass/forms` styles
 - color style guide for site
