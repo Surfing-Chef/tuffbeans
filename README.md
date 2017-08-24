@@ -22,14 +22,16 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
   - ACF
   - Formidable Forms
   - Jetpack
+  - Font Awesome for WordPress
   - Food and Drink Menu
 
 **2.1**
 - Added layout styles
-- Customized responsive menu with Font Awesome, SCSS and jQuery
+- Customized responsive menu with **Font Awesome**, *SCSS* and ***jQuery***
+- Adjusted responsiveness of contact form using *flex-box*
 
 **TODO**
+- backup and store database on OneDrive from desktop machine
 - font and font-styles
-- convert form to flex-box
-  - remember `process/sass/forms` styles
 - color style guide for site
+- menu style
