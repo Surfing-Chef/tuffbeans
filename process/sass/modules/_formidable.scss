@@ -1,0 +1,8 @@
+.frm_forms {
+    fieldset {
+        display: flex;
+        .frm_first input {
+            width: 100%;
+        }
+    }
+}

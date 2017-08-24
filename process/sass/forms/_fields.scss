@@ -1,8 +1,8 @@
 fieldset {
-	border-width: 1px;
-  border-style: solid;
-  border-color: #ccc;
-  border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 3px;
 }
 
 input[type="text"],
@@ -21,25 +21,24 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
-	border-radius: 3px;
-	padding: 3px;
-
-	&:focus {
-		color: $color__text-input-focus;
-	}
+    color: $color__text-input;
+    border: 1px solid $color__border-input;
+    border-radius: 3px;
+    padding: 3px;
+    &:focus {
+        color: $color__text-input-focus;
+    }
 }
 
 select {
-	border: 1px solid $color__border-input;
+    border: 1px solid $color__border-input;
 }
 
 textarea {
-	width: 100%;
+    width: 100%;
 }
 
 .frm_description {
-	font-size: .8rem;
-	padding-left: 9em;
+    font-size: .8rem;
+    padding-left: 9em;
 }
