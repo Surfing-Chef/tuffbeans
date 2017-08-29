@@ -31,13 +31,36 @@
 
 // Info
 #tuff-info {
-  .news-bullet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  .news-bullets {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+
+    .news-bullet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      // width: 33%;
+      // align-self: flex-start;
+
+      // @media screen
+      // and (min-width: 769px) {
+      //   width: 100%;
+      // }  
+
+    }  
+
+    @media screen
+    and (min-width: 769px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
   }
+
 }
 
 .icon-background1 {
