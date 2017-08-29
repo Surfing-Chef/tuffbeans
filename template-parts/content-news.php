@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="news">
+<section class="news front-page-menu-link">
 	<header class="section-header">
 		<h1 class="section-title">News</h1>
 	</header><!-- .page-header -->

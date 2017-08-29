@@ -9,7 +9,7 @@
 
 ?>
 
-<section id="tuff-contacts" class="contacts">
+<section id="tuff-contacts" class="contacts front-page-menu-link">
 	<header class="section-header">
 		<h1 class="section-title">Contacts</h1>
 	</header><!-- .page-header -->

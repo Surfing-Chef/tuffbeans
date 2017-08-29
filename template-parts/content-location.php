@@ -9,7 +9,7 @@
 
 ?>
 
-<section  id="tuff-location" class="location">
+<section  id="tuff-location" class="location front-page-menu-link">
 	<header class="section-header">
 		<h1 class="section-title">Location</h1>
 	</header><!-- .page-header -->

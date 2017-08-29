@@ -3,6 +3,7 @@ $(document).ready(function() {
     var $window = $(window);
     var navCont = $('.main-navigation.home');
     var navObj = $('.menu-main-nav-container');
+    var sectionHeaderLinks = $('.front-page-menu-link');
 
     $window.scroll(function() {
         var yPos = $window.scrollTop();
@@ -19,9 +20,11 @@ $(document).ready(function() {
         if (yPos >= htHeader) {
             navObj.addClass('top-nav-shade');
             navCont.addClass('top-nav-docked');
+            sectionHeaderLinks.css("margin-top", "56px");
         } else {
             navObj.removeClass('top-nav-shade');
             navCont.removeClass('top-nav-docked');
+            sectionHeaderLinks.css("margin-top", "0px");
         }
 
     });
