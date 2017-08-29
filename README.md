@@ -34,4 +34,11 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 - backup and store database on OneDrive from desktop machine
 - font and font-styles
 - color style guide for site
-- menu style
+- menu
+  - back to top button
+  - breadcrumbs?
+-animations
+  - link transitions
+  - menu hovers
+- news (blog entries)
+
