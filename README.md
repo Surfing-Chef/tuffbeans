@@ -8,9 +8,9 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 - [ ] font and color scheme
 - [ ] primary navigation - non-landing page
 - [ ] primary navigation - visual style
-- [ ] menu page
-- [ ] location page
-- [ ] contacts page
+- [x] menu section
+- [x] location section
+- [x] contacts section
 
 ## CHANGELOG ##
 **2.0.1**  
@@ -32,13 +32,17 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 
 **TODO**
 - backup and store database on OneDrive from desktop machine
-- font and font-styles
+- responsive layout of Info section
 - color style guide for site
-- menu
+- navigation
   - back to top button
   - breadcrumbs?
 -animations
   - link transitions
-  - menu hovers
+    - layout when linking to Menus and Location - headings should not be hidden
+  - nav hover transitions
+  - menu section needs styling
+- add contact info to Contacts section
 - news (blog entries)
+- footer content
 
