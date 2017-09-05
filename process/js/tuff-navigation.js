@@ -4,10 +4,11 @@ $(document).ready(function() {
     var navCont = $('.main-navigation.home');
     var navObj = $('.menu-main-nav-container');
     var sectionHeaderLinks = $('.front-page-menu-link');
+    var infoSectionHeight = $('.info.front-page-menu-link').height();
 
     $window.scroll(function() {
         var yPos = $window.scrollTop();
-        var check = 455;
+        var check = 405;
 
         if (navObj.height() < 100) {
             check = check;
@@ -20,12 +21,9 @@ $(document).ready(function() {
         if (yPos >= htHeader) {
             navObj.addClass('top-nav-shade');
             navCont.addClass('top-nav-docked');
-            sectionHeaderLinks.css("margin-top", "56px");
         } else {
             navObj.removeClass('top-nav-shade');
             navCont.removeClass('top-nav-docked');
-            sectionHeaderLinks.css("margin-top", "0px");
         }
-
     });
 });

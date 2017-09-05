@@ -63,9 +63,9 @@
     >div {
         background-color: transparentize(black, 0.8);
     }
-    @media screen and (min-width: 568px) {
-        height: 56px;
-    }
+    // @media screen and (min-width: 568px) {
+    //     height: 56px;
+    // }
     ul {
         list-style: none;
         margin: 0;
@@ -80,7 +80,7 @@
         @media screen and (min-width: 568px) {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             margin-top: -55px;
             li {
                 padding: 0 5.5%;
