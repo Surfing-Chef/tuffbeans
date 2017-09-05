@@ -1,10 +1,19 @@
 // Colors
 $blue: #1565c0;
+$light-blue: #a4ccff;
+
 $dark-gray: #444;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #CEDCB6;
 
+$dark-green: #21271c;
 $green: green;
+$light-green: #aab597;
+
+$brown: #4d4844;
+$orange: #b95758;
+
+
 
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
@@ -19,7 +28,7 @@ $color__text-input-focus: #111;
 $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__text-main: $dark-green;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
@@ -27,5 +36,6 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-$color-border-thin-dark: transparentize(black, 0.6);
+$color-border-thin-dark: transparentize($dark-green, 0.6);
+$color-border-thin-medium: transparentize($dark-green, 0.4);
 $color-border-thin-light: transparentize(white, 0.6);
