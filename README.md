@@ -24,6 +24,8 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
   - Jetpack
   - Font Awesome for WordPress
   - Food and Drink Menu
+  - Simple Image Sizes
+  - Page Animations And Transitions
 
 **2.1**
 - Added layout styles
@@ -31,15 +33,16 @@ An Underscores based WordPress theme with a Gulp build system implementing Sass 
 - Adjusted responsiveness of contact form using *flex-box*
 
 **TODO**
-- backup and store database on OneDrive from desktop machine
-- responsive layout of Info section
+- ~~backup and store database on OneDrive from desktop machine~~
+- ~~responsive layout of Info section~~
 - color style guide for site
 - navigation
   - back to top button
   - breadcrumbs?
 -animations
+  - [AOS](https://michalsnik.github.io/aos/), [AOS on GitHub](https://github.com/michalsnik/aos), [CSS-Trick - AOS](https://css-tricks.com/aos-css-driven-scroll-animation-library/)
   - link transitions
-    - layout when linking to Menus and Location - headings should not be hidden
+    - ~~layout when linking to Menus and Location - headings should not be hidden~~
   - nav hover transitions
   - menu section needs styling
 - add contact info to Contacts section
