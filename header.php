@@ -43,17 +43,14 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tuffbeans' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="parallax-window">
 
-		<nav id="site-navigation" class="main-navigation">
+		<section id="home" data-type="background" data-speed="5" class="parallax-background">
+			<article data-type="logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/TuffBeans_logoWhite.svg" alt="Tuff Beans Logo" class="logo">
+			</article>
+		</section>
 
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
