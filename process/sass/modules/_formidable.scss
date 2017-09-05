@@ -1,8 +1,21 @@
 .frm_forms {
     fieldset {
+        background: $light-green;
         display: flex;
         .frm_first input {
             width: 100%;
         }
     }
+}
+
+.frm_error_style,
+.frm_error {
+    color: $orange;
+    font-family: $font1;
+    font-weight: 700;
+}
+.frm_error {
+    text-transform: uppercase;
+    font-size: .6em;
+    padding-left: 6em;
 }
