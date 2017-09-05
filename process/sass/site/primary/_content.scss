@@ -22,25 +22,48 @@
   }
 
   #primary {
-    flex: 1 1 0;
+    // flex: 1 1 0;
     padding: 1em;
+    order: 2;
+    
+    @media screen
+    and (min-width: 769px) {
+      order: 1;
+    }
   }
 
   #secondary {
-    flex: 1 1 0;
-    padding: 1em;
+    // flex: 1 1 0;
+    padding: 2.53em 1em 1em 1em;
+    order: 1;
+    align-self: center;
 
+    @media screen
+    and (min-width: 769px) {
+      order: 2;
+      //padding: 0;
+      align-self: auto;
+    }
+
+    .widget_search {
+      display: flex;
+      //flex-direction: column;
+
+      // form {
+      //   align-self: flex-end;
+      // }
+    }
   }
 
 }
 
 // Info
 #tuff-info {
-  .news-bullets {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+margin-top: 2em;
 
+  .news-bullets {
+    display: flex;
+    flex-direction: column;
 
     .news-bullet {
       display: flex;
@@ -48,48 +71,82 @@
       justify-content: center;
       text-align: center;
       align-items: center;
-      // width: 33%;
-      // align-self: flex-start;
+      padding: 0 1em;
 
-      // @media screen
-      // and (min-width: 769px) {
-      //   width: 100%;
-      // }  
-
+      @media screen
+      and (min-width: 769px) {
+        align-self: flex-start;
+        width: 100%;
+      }  
     }  
 
     @media screen
     and (min-width: 769px) {
-      flex-direction: row;
-      justify-content: space-around;
+      flex-flow: row;
     }
-  
   }
-
 }
 
 .icon-background1 {
-  color: red;
+  color: green;
 }
 .icon-background2 {
   color: orange;
 }
 .icon-background3 {
-  color: green;
+  color: $light-blue;
 }
 
 // Tuff Menus
-#tuff-menus{
+#tuff-menus {
   text-align: center;
+  
+  // header {
+  //   @media screen
+  //   and (min-width: 769px) {
+  //     display: none;
+  //   }
+  // }
 
   h3 {
     font-size: 1.5rem;
   }
 
+  .fdm-column {
+    @media screen
+    and (min-width: 769px) {
+      display: flex;
+      flex-flow: row wrap;
+      //align-items: flex-start;
+    }
+
+  }
   .fdm-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
+    border: 1px solid $color-border-thin-dark;
+    border-radius: 3px;
+    padding: 1em;
+
+    &.fdm-section-breakfast{
+      background: beige;
+    }
+    &.fdm-section-lunch {
+      background: $light-blue;
+    }
+    &.fdm-section-barrista {
+      background: $light-green;
+    }
+    &.fdm-section-bartender{
+      background: beige;
+    }
+
+    @media screen
+    and (min-width: 769px) {
+      width: 50%;
+      
+    }
   }
 
   .fdm-item-panel {
