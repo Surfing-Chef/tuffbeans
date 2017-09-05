@@ -27,6 +27,14 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="post-thumbnail">
+			<?php
+				if ( has_post_thumbnail() ) {
+						the_post_thumbnail('medium_large');
+				}
+			?>
+		</div>
+		<!-- END .post-thumbnail -->		
 		<?php
 			the_content( sprintf(
 				wp_kses(
