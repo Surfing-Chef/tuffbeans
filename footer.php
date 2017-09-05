@@ -30,5 +30,25 @@
 
 <?php wp_footer(); ?>
 
+<!-- AOS Animation Scripts -->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script> 
+	$(document).ready(function(){
+		$(".fdm-item-panel").attr({ 'data-aos': 'zoom-in-up',
+									'data-aos-duration': 1000,
+									 'data-aos-offset': 500 });
+		$(".acf-map").attr({ 'data-aos': 'zoom-in-up',
+							 'data-aos-duration': 700,
+							 'data-aos-easing': 'ease-out-back',
+							 'data-aos-offset': 400 }); 
+		$(".frm_form_field").attr({ 'data-aos': 'fade-right',
+							 'data-aos-duration': 700,
+							 'data-aos-offset': 500 });					 
+	});
+
+	AOS.init();
+	
+</script>
+
 </body>
 </html>
