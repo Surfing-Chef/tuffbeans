@@ -63,9 +63,8 @@
     >div {
         background-color: transparentize(black, 0.8);
     }
-    // @media screen and (min-width: 568px) {
-    //     height: 56px;
-    // }
+    
+    
     ul {
         list-style: none;
         margin: 0;
@@ -73,20 +72,37 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-top: -205px;
+        margin: -205px auto 0 auto;
+        max-width: $max-main-container-width;
+        
         li {
             line-height: 2.5em;
+            background-color: none;
+            transition: all 1s ease;
+
+            &:hover,
+            &:focus,
+            &:active {
+                transition: all 1s ease;
+                background-color: $light-green;
+                
+                a {
+                    color: green;
+                }
+            }
         }
+
         @media screen and (min-width: 568px) {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: -55px;
             li {
                 padding: 0 5.5%;
                 border: 0;
                 background: none;
                 line-height: 3.5em;
+
                 &:last-child {
                     border-bottom: 0;
                 }
