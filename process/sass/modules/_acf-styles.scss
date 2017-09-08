@@ -29,18 +29,9 @@
 	border: $color-border-thin-dark solid 1px;
 	margin: 20px 0;
   border-radius: 3px;
-
-  // @media (max-width: $landscape) {
-  //   height: 275px;
-  // }
-  // @media (max-width: $tab) {
-  //   height: 370px;
-  // }
 }
 
 /* fixes potential theme css conflict */
 .acf-map img {
    max-width: inherit !important;
 }
-
-//.gm-style img { max-width: none; max-height: none;}
