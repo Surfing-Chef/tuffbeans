@@ -104,6 +104,9 @@ a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
+a:-webkit-any-link {
+  text-decoration: none;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.

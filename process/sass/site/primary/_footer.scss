@@ -3,7 +3,19 @@ footer {
     bottom: 0;
     background: $brown;
     width: 100%;
-    height: 100px;
-    z-index: -99;
+    height: $footer-height;
+    z-index: -999;
     text-align: center;
+}
+
+.site-info {
+    font-size: .75em;
+    color: $dark-green;
+
+    a {
+        color: $dark-green;
+        &:hover {
+            color: $light-green;
+        }
+    }
 }

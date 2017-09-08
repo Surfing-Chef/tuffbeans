@@ -14,16 +14,20 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<div class="footer-navigation">
+		<?php
+		wp_nav_menu( array(
+			'theme_location' => 'menu-2',
+			'menu_id'        => 'footer-menu'
+		) );
+		?>
+		</div><!-- #site-navigation -->
+
+
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tuffbeans' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'tuffbeans' ), 'WordPress' );
-			?></a>
+			<span>Tuffbeans &copy; Copyright 2017</span>
 			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tuffbeans' ), 'tuffbeans', '<a href="https://automattic.com/">Underscores.me</a>' );
-			?>
+			<span>Design by <a href="https://www.surfing-chef.com/about/">Surfing-Chef</a></span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
