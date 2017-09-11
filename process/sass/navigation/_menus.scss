@@ -97,12 +97,12 @@
         li {
             line-height: 2.5em;
             background-color: none;
-            transition: all 1s ease;
+            transition: all .5s ease;
 
             &:hover,
             &:focus,
             &:active {
-                transition: all 1s ease;
+                transition: all .5s ease;
                 background-color: $light-green;
                 
                 a {
