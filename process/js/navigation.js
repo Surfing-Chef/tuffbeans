@@ -37,10 +37,6 @@ $(document).ready(function() {
 	var activeArray = new Array(5);
 
 	for( var i = 0; i < activeArray.length; i++ ){
-		// var aChild = primaryNavItems[i];
-		// var id = $(aChild).attr('id'); 
-		// activeArray[i] = '#' + id;
-
 		activeArray[i] = new Array;
 
 		activeArray[i]['primary'] = '#' + $(primaryNavItems[i]).attr('id');
@@ -95,7 +91,7 @@ $(document).ready(function() {
 						console.log('windowPos:',windowPos);
 						console.log('windowHeight', windowHeight);
 						console.log('docHeight', docHeight);
-						if (docHeight - windowPos < 930){
+						if (docHeight - windowPos < 980){
 							console.log ('make contact active')
 							makeActive('#tuff-contacts')
 						}
