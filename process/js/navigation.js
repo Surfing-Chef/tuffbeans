@@ -1,106 +1,110 @@
 /**
  * File navigation.js.
  *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
+ * Enables the active page (news) or section (front-page) to correspond to
+ * a distinct nave style.
  */
-( function() {
-	var container, button, menu, links, i, len;
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
-		return;
-	}
+(function($) {
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+$(document).ready(function() {
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+	var primaryNavItems = $("#primary-menu li");
+	$(primaryNavItems[0]).addClass("active");
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+	var footerNavItems = $("#footer-menu li");
+	var bookmarks = $(".front-page-menu-link");
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
-	}
+	var primaryArray = [];
+	var footerArray = [];
+	var bookmarkArray = [];
+	// check if on home or news page
+	if ( bookmarks.length ){
+		for (var i = 0; i < bookmarks.length; i++) {
+			var menuLink = bookmarks[i];
+			var id = $(menuLink).attr('id');
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
+			bookmarkArray.push('#'+id);
 		}
-	};
-
-	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
-
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
+		bookmarkArray.splice(3, 0, '#tuff-news');
+	} else {
+		$(primaryNavItems[0]).removeClass("active");
+		$(footerNavItems[0]).removeClass("active");
+		$(primaryNavItems[3]).addClass("active");
+		$(footerNavItems[3]).addClass("active");
 	}
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		var self = this;
+	var activeArray = new Array(5);
 
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+	for( var i = 0; i < activeArray.length; i++ ){
+		// var aChild = primaryNavItems[i];
+		// var id = $(aChild).attr('id'); 
+		// activeArray[i] = '#' + id;
 
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
-				}
+		activeArray[i] = new Array;
+
+		activeArray[i]['primary'] = '#' + $(primaryNavItems[i]).attr('id');
+		activeArray[i]['footer'] = '#' + $(footerNavItems[i]).attr('id');
+		activeArray[i]['bookmark'] = bookmarkArray[i];
+	}
+	console.log(activeArray);
+
+	function makeActive(activate){
+		for (var i = 0; i < bookmarkArray.length; i++) {
+			if (activeArray[i]['bookmark'] === activate){
+				$(activeArray[i]['primary']).addClass("active");
+				$(activeArray[i]['footer']).addClass("active");
+			} 
+			else {
+				$(primaryNavItems[i]).removeClass("active");
+				$(footerNavItems[i]).removeClass("active");
 			}
-
-			self = self.parentElement;
 		}
 	}
 
-	/**
-	 * Toggles `focus` class to allow submenu access on tablets.
-	 */
-	( function( container ) {
-		var touchStartFn, i,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+	// scrolling
+    $(window).scroll(function() {
 
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
-				var menuItem = this.parentNode, i;
+		if ( bookmarks.length ){
+		
+			var windowPos = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			var docHeight = $(document).height();
+			console.log(windowPos);
+			console.log(windowHeight);
+			console.log(docHeight);
 
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
-					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
-							continue;
+
+			for (var i = 0; i < bookmarks.length; i++) {
+				if( activeArray[i]['bookmark'] != '#tuff-news' ) {
+					// section info
+					var sectionID = activeArray[i]['bookmark'];
+					//menu info
+					var primaryMenuID = activeArray[i]['primary'];
+					var footerMenuID = activeArray[i]['footer'];
+
+					var secPosition = $(sectionID).offset().top;
+					secPosition = secPosition - 55;
+			
+					var divHeight = $(sectionID).height();
+					if (windowPos >= secPosition && windowPos){
+						
+						makeActive(sectionID);
+						//console.log(sectionID, 'is active', 'windowPos:secPosition',windowPos,':', secPosition);
+
+						console.log('windowPos:',windowPos);
+						console.log('windowHeight', windowHeight);
+						console.log('docHeight', docHeight);
+						if (docHeight - windowPos < 930){
+							console.log ('make contact active')
+							makeActive('#tuff-contacts')
 						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
 					}
-					menuItem.classList.add( 'focus' );
-				} else {
-					menuItem.classList.remove( 'focus' );
 				}
-			};
-
-			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
-		}
-	}( container ) );
-} )();
+		} 
+    });
+
+});
+
+})(jQuery);
