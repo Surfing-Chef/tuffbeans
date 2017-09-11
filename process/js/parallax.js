@@ -25,7 +25,7 @@ $(document).ready(function(){
     $window.scroll(function() {
 
       var yPos = $window.scrollTop();
-      var speed = .6;
+      var speed = .7;
     
       var logoTop = startLogo - yPos * speed;
 
