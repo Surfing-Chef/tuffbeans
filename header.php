@@ -21,8 +21,6 @@
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous">
 </script>
-<!-- tuff-parallax -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/parallax.js" ?>></script>
 
 <!-- AOS CSS -->
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -45,8 +43,9 @@
 
 	<header id="masthead" class="parallax-window">
 
-		<section id="home" data-type="background" data-speed="5" class="parallax-background">
-			<article data-type="logo">
+	<!-- <section id="home" data-type="background" data-speed="5" class="parallax-background"> -->
+		<section id="home" data-rellax-speed="3.7" class="rellax parallax-background">
+			<article class="rellax" data-rellax-speed="7.3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/TuffBeans_logoWhite.svg" alt="Tuff Beans Logo" class="logo">
 			</article>
 		</section>

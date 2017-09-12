@@ -34,6 +34,13 @@
 
 <?php wp_footer(); ?>
 
+<!-- Rellax -->
+<script src="<?php echo get_template_directory_uri(); ?>/inc/rellax.min.js"></script>
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+</script>
+
 <!-- AOS Animation Scripts -->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script> 
