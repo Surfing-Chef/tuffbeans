@@ -43,7 +43,6 @@ $(document).ready(function() {
 		activeArray[i]['footer'] = '#' + $(footerNavItems[i]).attr('id');
 		activeArray[i]['bookmark'] = bookmarkArray[i];
 	}
-	console.log(activeArray);
 
 	function makeActive(activate){
 		for (var i = 0; i < bookmarkArray.length; i++) {
@@ -66,9 +65,6 @@ $(document).ready(function() {
 			var windowPos = $(window).scrollTop();
 			var windowHeight = $(window).height();
 			var docHeight = $(document).height();
-			console.log(windowPos);
-			console.log(windowHeight);
-			console.log(docHeight);
 
 
 			for (var i = 0; i < bookmarks.length; i++) {
@@ -86,13 +82,8 @@ $(document).ready(function() {
 					if (windowPos >= secPosition && windowPos){
 						
 						makeActive(sectionID);
-						//console.log(sectionID, 'is active', 'windowPos:secPosition',windowPos,':', secPosition);
 
-						console.log('windowPos:',windowPos);
-						console.log('windowHeight', windowHeight);
-						console.log('docHeight', docHeight);
 						if (docHeight - windowPos < 980){
-							console.log ('make contact active')
 							makeActive('#tuff-contacts')
 						}
 					}
