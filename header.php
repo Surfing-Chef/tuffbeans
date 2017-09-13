@@ -44,8 +44,8 @@
 	<header id="masthead" class="parallax-window">
 
 	<!-- <section id="home" data-type="background" data-speed="5" class="parallax-background"> -->
-		<section id="home" data-rellax-speed="3.7" class="rellax parallax-background">
-			<article class="rellax" data-rellax-speed="7.3">
+		<section id="home" data-rellax-speed="3.2" class="rellax parallax-background">
+			<article class="rellax" data-rellax-speed="6.3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/TuffBeans_logoWhite.svg" alt="Tuff Beans Logo" class="logo">
 			</article>
 		</section>
